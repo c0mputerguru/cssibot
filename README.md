@@ -5,11 +5,26 @@
 Looks like you were getting a bit bored finishing up the lab extensions, so
 we've got something a bit more fun for you to work on!
 
+# What Are We Doing?
+
+We're going to write a slack bot!  This bot can do whatever you want (within
+reason).  It can read messages sent to our slack channel, and based on those
+messages can send messages back to the channel.
+
+We're going to do this somewhat in secrecy; we want to just put the bots into
+the channel and see how the rest of the folks in class react!
+
+If you want to bounce ideas off of someone, come find Anand.
+
 ## Ground Rules
 
 1.  Only work on this after you've finished the lab you're supposed to get done
 as well as all the extensions to the lab.  The reason you're here is to work the
 curriculum that exists, this is for when you're done and still want more :)
+
+2.  Pay attention to the lectures and other material in class.  This isn't an
+excuse to ignore the teachers or other labs.  If we see this, we'll revoke the
+bot token.
 
 2.  Be nice.  We're going to be building a chat bot, which means it can talk on
 the slack channel.  Which means it will be visible to all of your peers,
