@@ -7,13 +7,19 @@ from slackclient import SlackClient
 # talk to Anand
 SLACK_BOT_TOKEN = "YOU'LL NEED TO ASK FOR A TOKEN!"
 
+echo_on = False
+
 def handle_direct_mention(message, channel):
     # TODO: This bot should probably do something more interesting...
-    send_message("Hey, you talkin' to me?", channel)
+    if message == "echo on":
+        echo_on = True
+    elif message == "echo off":
+        echo_on = False
 
 def handle_regular_message(message, channel):
     # TODO: This bot should probably do something more interesting...
-    send_message("Hmm, that was interesting...", channel)
+    if echo_on:
+        send_message(message, channel)
 
 ################################################################################
 #
