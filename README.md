@@ -122,12 +122,16 @@ Alongside this file, there is a cssibot.py file that provides a skeleton for a
 bot that connects to slack and can read and send messages.  Download it and put
 it in your cssibot directory.
 
-### Ask Anand for a bot token
+### Replace SLACK_BOT_TOKEN and YOUR_NAME
 
 The file has a constant called SLACK_BOT_TOKEN that needs to be a valid bot
 token.  Ask Anand for the token.  He will also add you to a testing channel
 where the bot is connected.  You can use that testing channel to run your bot
 and talk to it without polluting the main slack channel.
+
+Also, there is a YOUR_NAME variable that you should update with your name.
+Since we are using a single test channel for everyone in the classroom, having
+a unique way to turn your bot on and off helps clear the noise!
 
 ### Get Creative!
 
@@ -146,6 +150,9 @@ need to be in the virtual environment you created above, so you may need to run
 
 This will run your bot in the testing channel and you should be able to talk to
 it!
+
+To turn your bot on, you'll need to send a message like
+`@cssikirbottest YOUR_NAME On`.  To turn it off, `@cssikirbottest YOUR_NAME Off`
 
 ### Get it in the main channel
 

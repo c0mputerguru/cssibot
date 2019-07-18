@@ -7,20 +7,21 @@ from slackclient import SlackClient
 # This is the way the bot authenticates with slack.  To get a token, please
 # talk to Anand
 SLACK_BOT_TOKEN = "YOU'LL NEED TO ASK FOR A TOKEN!"
+YOUR_NAME = "YOUR_NAME"
 
-echo_on = False
+bot_on = False
 
 def handle_direct_mention(message, channel):
     # TODO: This bot should probably do something more interesting...
-    global echo_on
-    if message == "echo on":
-        echo_on = True
-    elif message == "echo off":
-        echo_on = False
+    global bot_on
+    if message == YOUR_NAME + " on":
+        bot_on = True
+    elif message == YOUR_NAME + " off":
+        bot_on = False
 
 def handle_regular_message(message, channel):
     # TODO: This bot should probably do something more interesting...
-    if echo_on:
+    if bot_on:
         send_message(message, channel)
 
 ################################################################################
