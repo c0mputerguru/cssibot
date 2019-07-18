@@ -1,6 +1,7 @@
 import os
 import time
 import re
+import logging
 from slackclient import SlackClient
 
 # This is the way the bot authenticates with slack.  To get a token, please
@@ -45,6 +46,9 @@ def send_message(message, channel):
 # SLACK, GETTING MESSAGES, AND PARSING THEM.
 #
 ################################################################################
+
+# Set up logging
+logging.basicConfig()
 
 # instantiate Slack client
 slack_client = SlackClient(SLACK_BOT_TOKEN)
