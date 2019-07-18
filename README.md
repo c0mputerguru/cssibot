@@ -26,18 +26,18 @@ curriculum that exists, this is for when you're done and still want more :)
 excuse to ignore the teachers or other labs.  If we see this, we'll revoke the
 bot token.
 
-2.  Be nice.  We're going to be building a chat bot, which means it can talk on
+3.  Be nice.  We're going to be building a chat bot, which means it can talk on
 the slack channel.  Which means it will be visible to all of your peers,
 teachers, and staff.  If we see a rude, offensive, or mean bot, we'll stop this
 entirely and nobody will get to have any more fun.  Don't ruin it!
 
-3.  For simplicity, I'm going to share a bot token with you.  Treat that token
+4.  For simplicity, I'm going to share a bot token with you.  Treat that token
 like a password; don't share it with others or post it anywhere.  Put it in your
 code, but don't plan on checking your code in anywhere with the token.  Don't
 make me regret this!  This is generally a bad practice, but setting up proper
 key distribution for 2.5 weeks seems like a lot.
 
-4.  Be creative!  Bots can do lots of cool things; they can be helpful, they can
+5.  Be creative!  Bots can do lots of cool things; they can be helpful, they can
 be funny, they can be cryptic.  Use your imagination!  A couple random ideas
 I've come up with are:
     - A bot that can help decide what category to use for concentration.
