@@ -9,6 +9,7 @@ from slackclient import SlackClient
 SLACK_BOT_TOKEN = "YOU'LL NEED TO ASK FOR A TOKEN!"
 YOUR_NAME = "YOUR_NAME"
 YOUR_CATCHPHRASE = "YOUR_CATCHPHRASE"
+YOUR_TRIGGER = "YOUR_TRIGGER"
 
 bot_on = False
 
@@ -21,9 +22,14 @@ def handle_direct_mention(message, channel):
         bot_on = False
 
 def handle_regular_message(message, channel):
-    # TODO: This bot should probably do something more interesting...
-    if bot_on:
-        send_message(YOUR_CATCHPHRASE, channel)
+    # If the bot isn't on, do nothing.
+    if not bot_on:
+        return
+
+    # If the bot is on and the message is your trigger, respond with the
+    # catchphrase
+    if message = YOUR_TRIGGER:
+            send_message(YOUR_CATCHPHRASE, channel)
 
 ################################################################################
 #
