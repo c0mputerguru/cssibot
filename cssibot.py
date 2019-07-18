@@ -11,13 +11,16 @@ echo_on = False
 
 def handle_direct_mention(message, channel):
     # TODO: This bot should probably do something more interesting...
+    global echo_on
     if message == "echo on":
         echo_on = True
+        print "turning echo on"
     elif message == "echo off":
         echo_on = False
 
 def handle_regular_message(message, channel):
     # TODO: This bot should probably do something more interesting...
+    print(echo_on)
     if echo_on:
         send_message(message, channel)
 
