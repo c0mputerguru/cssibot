@@ -138,7 +138,16 @@ mention.
 is a regular message to the channel.  The message is the whole thing that was
 said.
 
-### Run your bot
+### Test your bot!
 Just like any other python application, run `python cssibot.py`.  Remember, you
 need to be in the virtual environment you created above, so you may need to run
 `source cssibot/bin/activate`.
+
+This will run your bot in the testing channel and you should be able to talk to
+it!
+
+### Get it in the main channel
+
+Just like real production code, we don't just let it run without review.  Call
+Anand over and we'll chat about your code.  If it looks good, you'll send it
+over to him and he'll put it on a server.
