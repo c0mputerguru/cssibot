@@ -8,6 +8,7 @@ from slackclient import SlackClient
 # talk to Anand
 SLACK_BOT_TOKEN = "YOU'LL NEED TO ASK FOR A TOKEN!"
 YOUR_NAME = "YOUR_NAME"
+YOUR_CATCHPHRASE = "YOUR_CATCHPHRASE"
 
 bot_on = False
 
@@ -22,7 +23,7 @@ def handle_direct_mention(message, channel):
 def handle_regular_message(message, channel):
     # TODO: This bot should probably do something more interesting...
     if bot_on:
-        send_message(message, channel)
+        send_message(YOUR_CATCHPHRASE, channel)
 
 ################################################################################
 #

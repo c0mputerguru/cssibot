@@ -122,7 +122,7 @@ Alongside this file, there is a cssibot.py file that provides a skeleton for a
 bot that connects to slack and can read and send messages.  Download it and put
 it in your cssibot directory.
 
-### Replace SLACK_BOT_TOKEN and YOUR_NAME
+### Replace SLACK_BOT_TOKEN, YOUR_NAME, and YOUR_CATCHPHRASE
 
 The file has a constant called SLACK_BOT_TOKEN that needs to be a valid bot
 token.  Ask Anand for the token.  He will also add you to a testing channel
@@ -132,6 +132,10 @@ and talk to it without polluting the main slack channel.
 Also, there is a YOUR_NAME variable that you should update with your name.
 Since we are using a single test channel for everyone in the classroom, having
 a unique way to turn your bot on and off helps clear the noise!
+
+You can replace YOUR_CATCHPHRASE with whatever your personal catchphrase is.
+Then, if your bot is on, everytime someone says anything, your bot will respond
+with the catchphrase.
 
 ### Get Creative!
 
