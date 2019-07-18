@@ -108,11 +108,12 @@ If this worked correctly, your terminal command prompt should start with
 close your terminal and want to open another to work on this bot, you'll need to
 re-run step 2.
 
-### Install the SlackClient library in our virtual environment
+### Install the SlackClient library and Websockets in our virtual environment
 
 This will install a library that someone else wrote that helps us talk to slack:
 ```shell
 pip install slackclient
+pip install websocket_client==0.47.0
 ```
 
 ### Download the bot skeleton
