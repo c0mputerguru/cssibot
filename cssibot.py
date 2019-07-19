@@ -28,7 +28,7 @@ def handle_regular_message(message, channel):
 
     # If the bot is on and the message is your trigger, respond with the
     # catchphrase
-    if message = YOUR_TRIGGER:
+    if message == YOUR_TRIGGER:
             send_message(YOUR_CATCHPHRASE, channel)
 
 ################################################################################
